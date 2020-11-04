@@ -58,9 +58,9 @@ const AddTransaction=()=>{
             <div className="form">
               <form onSubmit={onSubmission}>
                 <label className="label">Description:</label>
-                <input onChange={takeValue} className="input" value={val.description} name="description" type="text" placeholder="Enter Description" />
+                <input onChange={takeValue} className="input" value={val.description} name="description" type="text" placeholder="Enter Description" autoComplete="off" />
                 <label className="label">Amount:</label>
-                <input onChange={takeValue} className="input" value={val.amount} name="amount" type="number" placeholder="-ive-->expense,+ive-->income" />
+                <input onChange={takeValue} className="input" value={val.amount} name="amount" type="number" placeholder="-ive-->expense,+ive-->income" autoComplete="off" />
                 <button className="add_btn" onClick={addToTransactionHistory} >Add</button>
               </form>  
             </div>
